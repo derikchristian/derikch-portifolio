@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title data-i18n="title">DerikCh - Portifolio</title>
+        <meta name="author" content="Derik Christian Leite dos Santos">
+        <meta name="description" content="Portifolio">
+        <!-- icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/icons/favicon/site.webmanifest">
+        <!-- consider changing the import method to contain just the icons im using for a faster load time -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css/css/flag-icon.min.css">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js" async></script>
+        <script src="js/language.js" defer></script>
+    </head>
+    <body>
+        <section class="header-hero spyed">
+            <header>
+                <div class="content">
+                    <a href="#hero" class="site-title">
+                        <h2>DerikCh</h2>
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a data-i18n="nav_about" href="#about">About</a></li>
+                            <!-- add a resume button here with a pdf -->
+                            <li><a data-i18n="nav_technologies" href="#technologies">Technologies</a></li>
+                            <li><a data-i18n="nav_projects" href="#projects">Projects</a></li>
+                            <li><a data-i18n="nav_contact" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-right">
+                        <div class="social">
+                            <a href="https://github.com/derikchristian" target="_blank" aria-label="GitHub" class="icon github">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                            <a href="" target="_blank" aria-label="Linkedin" class="icon linkedin" >
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                            <!--<li><a href="" target="_blank" aria-label="Facebook" class="icon facebook">
+                                <i class="fab fa-facebook fa-lg"></i></li>
+                            <li><a href="" target="_blank" aria-label="Twitter" class="icon twitter">
+                                <i class="fab fa-twitter fa-lg"></i></li>
+                            </a> -->
+                            </div>
+                            <span id="language-separator"></span>
+                            <div class="language-selector">
+                                <a id="english" class="language">
+                                    <img src="images/icons/flags/flag_usa.png" alt="Icone USA">
+                                </a>
+                                <a id="portuguese" class="language">
+                                    <img src="images/icons/flags/flag_brasil.png" alt="Icone Brasil">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="hero">
+                <div class="content">
+                    <div class="text">
+                        <h1 id="name" data-i18n="name">&lt;/Derik Christian&gt;</h1>
+                        <p data-i18n="description">Future Full Stack Web Developer.</p>
+                    </div>
+                    <div class="visual">
+                    <!-- add something to fill the void here -->
+                        <img src="" alt="Placeholder">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <main>
+            <section id="about" class="with-separator spyed">
+                <h2 class="title" data-i18n="About-me">About me</h2>
+                <div class="content">
+                    <div class="text">
+                        <div class="buttons">
+                            <button class="blue-background"><p data-i18n="who">Who am I</p></button>
+                            <button><p data-i18n="education">Education and Skills</p></button>
+                            <button><p data-i18n="qualities">Main Qualities</p></button>
+                            <button><p data-i18n="objectives">Current Objectives</p></button>
+                        </div>
+                        <div class="folder">
+                            <p class="about-me" data-i18n="about-text">Hi, I'm Derik, a 22-year-old beginner web developer starting his career and studying to become a Full Stack developer. I'm passionate about learning new things, logic, problem-solving, and building efficient systems. I enjoy tackling challenges with critical and analytical thinking, and I strive to create high-quality, clean, and effective solutions.</p>
+                            <p class="deactive education-and-skills" data-i18n="education-text"> 
+                                I have a strong grasp of HTML, CSS, and JavaScript, and I'm currently learning frameworks like React and Bootstrap, as well as backend development with Node.js and MongoDB.
+                                <br>
+                                I'm also pursuing a degree in Data Analysis, as I believe data can plays a vital role in every carrer, and combining development skills with data driven insights, is how we create real solutions for real-world problems.
+                            </p>
+                            <p class="deactive qualities" data-i18n="qualities-text">I'm determined, motivated, and always seeking to improve and learn. Whether working independently or as part of a team, I focus on delivering high-quality results with great attention to detail.</p>
+                            <p class="deactive objectives" data-i18n="objectives-text">I'm currently focused on developing new skills, refining the ones I already have, and seeking opportunities to expand my portfolio and gain hands-on experience. My goal is to continually grow as a developer and professional.</p>
+                        </div>
+                        <!-- consider not using my photo or a background image -->
+                    </div>
+                    <div class="visual">   
+                        <img src="" alt="Placeholder">
+                    </div>
+            </section>
+            <section id="technologies" class="with-separator spyed">
+                <h2 class="title" data-i18n="skills">Skills</h2>
+                <div class="content">
+                    <ul class="tech-list">
+                        <li class="tech">
+                            <p>HTML</p>
+                            <img src="images/icons/html.svg" alt="HTML5 icon">
+                        </li>
+                        <li class="tech">
+                            <p>CSS3</p>
+                            <img src="images/icons/css.svg" alt="CSS icon">
+                        </li>
+                        <li class="tech">
+                            <p>Javascript</p>
+                            <img src="images/icons/js.svg" alt="JavaScript icon">
+                        </li>
+                        <li class="tech">
+                            <p>Git</p>
+                            <img src="images/icons/git.svg" alt="Git icon">
+                        </li>
+                        <li class="tech">
+                            <p>Python</p>
+                            <img src="images/icons/python.svg" alt="Python icon">
+                        </li>
+                    </ul>
+                    <h3 class="future-title" data-i18n="future-skills">What I'm learning</h3>
+                    <ul class="future tech-list">
+                        <li class="tech">
+                            <p>React</p>
+                            <img src="images/icons/bootstrap.svg" alt="Bootstrap icon">
+                        </li>                        
+                        <li class="tech">
+                            <p>React</p>
+                            <img src="images/icons/react.svg" alt="React icon">
+                        </li>
+                        <li class="tech">
+                            <p>Node</p>
+                            <img src="images/icons/node.svg" alt="Node icon">
+                        </li>
+                        <li class="tech">
+                            <p>MongoDB</p>
+                            <img src="images/icons/mongodb.svg" alt="MongoDB icon">
+                        </li>
+                    </ul>
+                </div>    
+            </section>
+            <section id="projects" class="spyed">
+                <h2 class="title" data-i18n="projects">Projects</h2>
+                <div class="content">
+                    <ul>
+                        <li class="project">
+                            <p class="title" data-i18n="project-title1">Title</p>
+                            <div class="representation"><img src="" alt="Placeholder"></div>
+                            <div class="container">
+                                <button data-i18n="load">Load HTML here!</button>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <p class="title" data-i18n="project-title2">Title</p>
+                            <div class="representation"><img src="" alt="Placeholder"></div>
+                            <div class="container">
+                                <button data-i18n="load">Load HTML here!</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact" class="spyed">
+                <div class="content">
+                    <div class="visual">
+                        <img src="images/cellphone.png" alt="Vibrating Cellphone" class="cellphone">
+                        <div class="cellphone-shadow"></div>
+                    </div>
+                    <div class="contacts">
+                        <h2 data-i18n="contact">Send a Message!</h2>
+                        <div class="text">
+                            <i class="fa-solid fa-envelope fa-lg"></i>
+                            <span> - SDerikch@hotmail.com</span>
+                            <i class="fa-solid fa-mobile fa-lg"></i>
+                            <span> - +55 11 96331-4888</span>
+                            <!-- <i class="fa-brands fa-whatsapp fa-lg"></i>
+                            <p>whatsapp</p>
+                            <p>Just Click!</p> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="content">
+                <div class="text">
+                    <a href="#hero">
+                        <h2>DerikCh</h2>
+                    </a>
+                    <p data-i18n="rights">© 2025 Derik Christian. All rights reserved.</p>
+                    <p data-i18n="author">Designed and built by me.</p>
+                </div>
+                <div class=".icons">
+                    <a href="" target="_blank" aria-label="Github" class="icon linkedin" >
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/derikchristian" target="_blank" aria-label="Linkedin" class="icon github" >
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </div>
+                <!-- <a href="" target="_blank" aria-label="Resume" class="icon linkedin" >
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="" target="_blank" aria-label="Whatsapp" class="icon linkedin" >
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a> -->
+                <!-- talvez twitter e insta -->
+            </div>
+        </footer>
+    </body>
+</html>
