@@ -1,11 +1,12 @@
 {
     "title": "DerikCH - Portifolio",
-    nav_about: "About",
+    "nav_about": "About",
     "nav_technologies": "Technologies",
     "nav_projects": "Projects",
     "nav_contact": "Contact",
     "name": "</Derik Christian>",
     "description": "Future Full Stack Web Developer.",
+    "About-me": "About me",
     "who": "Who am I",
     "education": "Education and Skills",
     "qualities": "Main Qualities",

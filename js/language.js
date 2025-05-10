@@ -12,7 +12,7 @@ function translatePage(data){
 }
 
 function changeLang(lang){
-    fetch(`../lang/${lang}.json`)
+    fetch(`lang/${lang}.json`)
     .then(response => response.json())
     .then(data => {
         translatePage(data)
