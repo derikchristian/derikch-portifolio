@@ -11,8 +11,8 @@
     "education": "Conhecimentos",
     "qualities": "Principais Qualidades",
     "objectives": "Objectivos atuais",
-    "about-text": "Olá, Meu nome é Derik, tenho 22 anos e sou um desenvolvedor web iniciante de começando sua carreira e estudando pra se tornar um desenvolvedor Full Stack. Tenho interesse por logica, resolução de problemas, aprender coisas novas e criar sistemas eficientes. Gosto de lidar com desafios de forma crítica e analítica, e procuro sempre criar soluções de alta qualidade, limpas e eficazes.",
-    "education-text": "Já tenho um forte dominio, CSS e JavaScript, e estou estudando frameworks como React e Bootstrap, além do back-end com Node.js e MongoDB. Também estou me especializando na área de Análise de Dados ja que acredito que dados podem ser impactantes em qualquer carreira e alinhar o desenvolvimento com a análise é como criamos soluções reais para problemas reais.",
+    "about-text": "Olá, Meu nome é Derik, tenho 22 anos e sou um desenvolvedor web começando sua carreira e estudando pra se tornar um desenvolvedor Full Stack. Tenho interesse por logica, resolução de problemas, aprender coisas novas e criar sistemas eficientes. Gosto de lidar com desafios de forma crítica e analítica, e procuro sempre criar soluções de alta qualidade, limpas e eficazes.",
+    "education-text": "Já tenho um forte dominio, CSS e JavaScript, e estou estudando frameworks como React e Tailwind, além do back-end com Node.js e PostGreeSQL. Também estou me especializando na área de Análise de Dados ja que acredito que dados podem ser impactantes em qualquer carreira e alinhar o desenvolvimento com a análise é como criamos soluções reais para problemas reais.",
     "qualities-text": "Sou determinado, motivado e sempre buscando melhorar e aprender. Seja trabalhando de forma independente ou em equipe, meu foco é entregar resultados de alta qualidade e com atenção aos detalhes.",
     "objectives-text": "No momento estou focado em desenvolver minhas habilidades além de aprimorar as que já tenho, e também procurando oportunidades para expandir meu portifólio e ganhar experiência prática. Meu objetivo é crescer continuamente como desenvolvedor e profisional.",
     "skills": "Habilidades",
@@ -23,5 +23,7 @@
     "project-title2": "Título",
     "contact": "Mande uma Mensagem!",
     "rights": "© 2025 Derik Christian. Todos direitos reservados.",
-    "author": "Projetado e desenvolvido por mim."
+    "author": "Projetado e desenvolvido por mim.", 
+    "github": "Github",
+    "live": "Site ao vivo"
 }

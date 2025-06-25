@@ -1,5 +1,6 @@
 /* Reset */
-*{
+* {
+
     margin: 0;
     padding: 0;
     border: 0px, none, transparent;
@@ -9,7 +10,8 @@
     list-style-type: none;
 }
 
-html{
+html {
+
     font-size: 16px;
     /* make custom later */
     scroll-behavior: smooth;
@@ -19,58 +21,68 @@ html{
 
 /* General */
 
-h1, footer h2{
+h1, footer h2 {
+
     color: #0077B5;
     font-family: "Raleway";
     font-size: 32px;
     font-weight: 700;
 }
 
-h2, h3, h4{
+h2, h3, h4 {
+
     color: #58a6ff;
     font-family: "Montserrat";
     font-weight: 600;
 }
 
-button p{
+button p {
+
     font-family: "Montserrat";
 }
 
-button{
+button {
+
     cursor: pointer;
 }
 
-h5, h6, p, span, header nav a{
+h5, h6, p, span, header nav a {
+
     color: #c9d1d9;
     font-family: "Lato";
 }
 
-.content{
+.content {
+
     max-width: 1230px;
     margin: auto;
 }
 
 .title {
+
     max-width: 1230px;
     margin: auto;
     text-align: center;
 }
 
-.with-separator{
+.with-separator {
+
     border-bottom: #181717 1px solid;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* body */
 
-body{
+body {
+
     background: linear-gradient(to bottom,  #1e2329 0%, #1e2329 38%,  #12171d 100%);
     /* target color: #161b22; */
 }
 
 /* Header-Hero */
 
-.header-hero{
+.header-hero {
+
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -86,6 +98,7 @@ body{
 /* Dark-overlay */
 
 .header-hero::before {
+
     content: "";
     width: 100%; 
     height: 100%;
@@ -96,11 +109,13 @@ body{
 
 /* icons */
 
-.header-right a{
+.header-right a {
+
     font-size: 18px;
 }
 
-.linkedin i{
+.linkedin i {
+
     width: 0px;
     height: 0px;
     padding: 8px 18px 8px 0px;
@@ -109,35 +124,42 @@ body{
     cursor: pointer;
 }
 
-.linkedin i::before{
+.linkedin i::before {
+
     position: relative;
     right: 1px;
 }
 
-.linkedin i:hover{
+.linkedin i:hover {
+
     color: #0b5da0;
 }
 
-.github i{
+.github i {
+
     color: #fff;
 }
 
-header .social .github i{
+header .social .github i {
+
     transition: color 1s ease;
 }
 
-header .social .github i:hover{
+header .social .github i:hover {
+
     color: #5c5c5c;
     transition: none;
 }
 
-footer .github i:hover{
+footer .github i:hover {
+
     color: #c4c4c4;
 }
 
 /* Header*/
 
-header{
+header {
+
     width: 100%;
     position: fixed;
     top: 0px;
@@ -145,34 +167,64 @@ header{
     transition: 1s background-color ease;
 }
 
-header:hover{
+header:hover {
+
     background-color: #f3f3f3;
 }
 
 header:hover a,
-header:hover .github i{
+header:hover .github i {
+
     color: #000;
 }
 
-header:hover #language-separator{
+header:hover #language-separator {
+
     border-color: #000;
 }
 
+header button {
+
+    font-size: 30px;
+    color: #e9e9e9;
+    display: none;
+    transition: 1s color ease;
+    align-items: center;
+}
+
+header:hover button {
+
+    color: #000;
+}
+
+header button p {
+
+    display: inline;
+    font-size: 18px;
+    color: inherit;
+    margin-left: 5px;
+    margin-right: 24px;
+}
+
 header:hover .site-title h2 {
+
     color: #0077B5;
 }
 
 header .site-title h2:hover{
+
     color: #004266;
     transition: none;
 }
 
 header nav a:hover{
+
     color: #0c93db;
     transition: none;
 }
 
 header .content{
+
     width:  85%;
     height: 55px;
     padding: 10px;
@@ -183,24 +235,28 @@ header .content{
 }
 
 header .site-title{
+
     max-width: 115px;
     flex-grow: 1;
     flex-shrink: 0;
 }
 
 header .site-title h2{
+
     color: #fff;
     font-size: 27px;
     transition: 1s color ease;
 }
 
 nav{
+
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
 
 nav ul{
+
     /* make a media querry to change this to 90% for small monitors */
     width: 75%;
     display: flex;
@@ -209,6 +265,7 @@ nav ul{
 }
 
 nav a{
+
     position: relative;
     font-size: 18px;
     font-weight: 500;
@@ -216,6 +273,7 @@ nav a{
 }
 
 nav a::after{
+
     content: "";
     width: 105%;
     height: 0px;
@@ -228,6 +286,7 @@ nav a::after{
 }
 
 .header-right{
+
     max-width: 130px;
     flex-grow: 1;
     flex-shrink: 0;
@@ -237,6 +296,7 @@ nav a::after{
 }
 
 #language-separator{
+
     height: 25px;
     margin-left: 2px;
     border: #fff 1px solid;
@@ -244,12 +304,14 @@ nav a::after{
 }
 
 .language-selector{
+
     margin-top: 4px;
     position: relative;
     cursor: default;
 }
 
 .language-selector .language{
+
     width: 26px;
     height: 20px;
     border: #000 2px solid;
@@ -261,6 +323,7 @@ nav a::after{
 }
 
 .language-selector img{
+
     width: 30px;
     height: auto;
     position: absolute;
@@ -270,12 +333,14 @@ nav a::after{
 }
 
 .language:hover{
+
     transform: translateY(-3px);
 }
 
 /* Hero */
 
 #hero{
+
     max-width: 1230px;
     padding: 0;
     margin: auto;
@@ -283,6 +348,7 @@ nav a::after{
 }
 
 #hero .content{
+
     height: calc(100vh - 55px);
     margin-top: 70px;
     display:flex;
@@ -291,16 +357,19 @@ nav a::after{
 }
 
 #hero h1{
+
     font-size: 80px;
 }
 
 #hero p{
+
     padding-left: 103px;
     font-size: 20px;
 }
 
 
 #hero .visual img{
+
     width: 100px;
     height: auto;
     display: none;
@@ -311,16 +380,19 @@ nav a::after{
 /* About */
 
 #about{
+
     padding-bottom: 150px;
     padding-top: 250px;
-    background: linear-gradient(to bottom, #000 0%, #161b22 70%, #1e2329 100%);
+    background: linear-gradient(to bottom, #000000 0%, #161b22 70%, #1e2329 100%);
 }
 
 #about .title{
+
     padding-bottom: 30px;
 }
 
 #about .content{
+
     padding: 0 10px;
     display: flex;
     align-items: flex-end;
@@ -328,11 +400,12 @@ nav a::after{
 }
 
 #about .text{
-    min-width: 700px;
+
     padding: 0 20px;
 }
 
 #about .buttons{
+
     height: 50px;
     margin-left: 5px;
     padding-right: 14.5%;
@@ -343,6 +416,7 @@ nav a::after{
 }
 
 #about .folder{
+
     max-width: 810px;
     height: 300px;
     margin: auto;
@@ -355,10 +429,12 @@ nav a::after{
 }
 
 #about .buttons button:hover{
+
     height: 45px;
 }
 
 #about button{
+
     width: 175px;
     height: 30px;
     margin-right: 5px;
@@ -371,12 +447,14 @@ nav a::after{
 }
 
 #about button p{
+
     margin-top: 5px;
     color: #fff;
     font-size: 16px;
 }
 
 #about .folder p{
+
     width: 80%;
     height: auto;
     font-size: 22px; 
@@ -385,6 +463,7 @@ nav a::after{
 }
 
 #about img{
+
     width: auto;
     height: 200px;
     display: none;
@@ -393,87 +472,94 @@ nav a::after{
 /* Technologies */
 
 #technologies{
+
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 #technologies .title{
+
     padding-bottom: 60px;
 }
 
-#technologies .content{
-    min-width: 900px;
-}
-
 #technologies .content h3{
+
     text-align: center;
     padding-bottom: 50px;
 }
 
-#technologies .tech-list{
+#technologies .tech-list {
+
     max-width: 1280px;
-    margin: 0 20px;
-    margin-bottom: 70px;
+    margin: 0 20px 70px;
     display: flex;
-    justify-content: space-around;
-    gap: 5px;
+    flex-wrap: wrap;           
+    justify-content: center;    
+    gap: 10px;                 
 }
 
-#technologies .tech{
-    width: 200px;
-    max-width: 25%;
-    height: 100%;
-    aspect-ratio: 5/6;
-    border: 3px, #000, solid;
+#technologies .tech {
+    
+    flex: 1 0 205px;            
+    max-width: 215px;            
+    aspect-ratio: 5 / 6;
+    border: 3px solid #000;
     border-radius: 10px;
     background-color: #0d1117;
-    display: inline-flex;
+    display: flex;              
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: transform linear 0.05s;
 }
 
-#technologies .tech:hover{
+#technologies .tech:hover {
+    
     box-shadow: 7px 6px 1px 1px rgba(0, 0, 0, 0.3);
     transform: translateY(-8px) translateX(-2px);
 }
 
-#technologies .tech img{
+#technologies .tech img {
+    
     width: 70%;
     height: auto;
     margin: 20px 5px 15px 5px;
 }
 
-#technologies .tech p{
+#technologies .tech p {
+    
     text-align: center;
 }
 
 /* Projects */
 
-#projects{
-    min-width: 725px;
+#projects {
+    
     padding-top: 110px;
     padding-bottom: 250px;
 }
 
-#projects .title{
+#projects .title {
+    
     padding-bottom: 90px;
 }
 
-#projects .content ul{
+#projects .content ul {
+    
     padding: 0 20px;
     display: grid;
-    grid-template: min-content / repeat(2, minmax(0px, 1fr));
+    /* grid-template: min-content / repeat(2, minmax(0px, 1fr)); */
+    grid-template: min-content / repeat(1, minmax(0px, 1fr));
     gap: 20px;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
 }
 
-#projects .project{
+#projects .project {
+    
     width: 100%;
-    max-width: 435px;
+    max-width: 550px;
     aspect-ratio: 73/100;
     border: 3px solid #000;
     border-radius: 5px;
@@ -484,12 +570,14 @@ nav a::after{
     text-align: center;
 }   
 
-.project .representation{
+.project .representation {
+    
     width: 98%;
     flex-grow: 83;
 }
 
-#projects .project .title{
+#projects .project .title {
+    
     width: 100%;
     padding-bottom: 0;
     border-bottom: 5px solid #000;
@@ -502,7 +590,8 @@ nav a::after{
     line-height: 100%;
 }
 
-.project .container{
+.project .buttons {
+
     width: 100%;
     margin: auto;
     background-color: #0077B5;
@@ -510,9 +599,65 @@ nav a::after{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
-.project button{
+.project .representation {
+
+    position: relative;
+    max-height: 588px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project .representation:hover .overlay {
+
+    display: flex;
+}
+
+.project .overlay {
+
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 98%;
+    width: 98%;
+    z-index: 2;
+}
+
+.project .overlay img {
+
+    width: 100px;
+    border: rgba(255, 255, 255, 0.7) solid 3px;
+    border-radius: 50%;
+    padding: 5px;
+    opacity: 0.4;
+}
+
+.project img {
+
+    width: 100%;
+    height: auto;
+}
+
+.project .overlay img:hover {
+
+    border-color: #fff;
+    opacity: 0.8;
+}    
+
+.project .representation > img {
+
+    align-self: flex-start;
+}
+
+.project .buttons button, .project .buttons a {
+
     width: 35%;
     height: 22px;
     border: #000 2px solid;
@@ -522,15 +667,18 @@ nav a::after{
     font-family: "Lato";
     font-weight: 600;
     transform: translateY(-1px);
+    cursor: pointer;
 }
 
-.project button:hover{
+.project .buttons button:hover, .project .buttons a:hover {
+
     box-shadow: none;
     background-color: #eee;
     transform: none;
 }
 
-.project button:active{
+.project .buttons button:active {
+
     width: calc(35% - 2px);
     height: 20px;
     margin: 1px;
@@ -540,22 +688,19 @@ nav a::after{
     font-size: 13px;
 }
 
-.project img{
-    display: none;
-}
-
 /* Contact */
 
-#contact{
+#contact {
+    
     height: 275px;
-    min-width: 735px;
     padding-top:45px;
     padding-bottom: 20px;
     background-color: #0d1117;
     position: relative;
 }
 
-#contact::after{
+#contact::after {
+ 
     content: "";
     width: 100%; 
     border-bottom: solid 1px #1c222b;
@@ -565,14 +710,16 @@ nav a::after{
     transform: translateX(-50%);
 }
 
-#contact .content{
+#contact .content {
+ 
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#contact .contacts{
+#contact .contacts {
+ 
     max-width: 300px;
     padding-top: 50px;
     padding-right: 20px;
@@ -582,7 +729,8 @@ nav a::after{
     align-items: center;
 }
 
-#contact .content .text{
+#contact .content .text {
+ 
     display: grid;
     grid-template: repeat(2, 35px) / 45px 175px;
     align-items: center;
@@ -591,18 +739,21 @@ nav a::after{
     justify-content: center;    
 }
 
-#contact h2{
+#contact h2 {
+ 
     grid-column: 1/3;
     padding-bottom: 30px;
 }
 
-#contact .visual{
+#contact .visual {
+
     margin-top: 30px;
     display: inline-block;
     position: relative;
 }
   
 @keyframes cellphone-vibrate {
+
     0%     { transform: translate(  0,    0   ) rotate(  0deg );}
     0.75%  { transform: translate(  0,   -2px ) rotate(  3deg );}
     1.5%   { transform: translate(  0,    2px ) rotate(  0deg );}
@@ -644,12 +795,14 @@ nav a::after{
 }
 
 .cellphone {
+
     width: 100px;
     height: auto;
     animation: cellphone-vibrate infinite 6s linear;
 }
 
-.cellphone-shadow{
+.cellphone-shadow {
+
     width: 120px;
     height: 15px;
     border-radius: 50%;
@@ -661,7 +814,8 @@ nav a::after{
     transform: translatex(-50%);
 }
 
-#contact i{
+#contact i {
+
     padding: 15px 0;
     color: #c9d1d9;
     font-size: 24px;
@@ -670,12 +824,13 @@ nav a::after{
 
 /* Footer */
 
-footer{
+footer {
+
     background-color: #0d1117;
-    min-width: 500px;
 }
 
-footer .content{
+footer .content {
+
     width: 85%;
     max-width: 1500px;
     height: 130px;
@@ -686,43 +841,491 @@ footer .content{
     justify-content: space-between;
 }
 
-footer p{
+footer p {
+
     color: #8b949e;
 }
 
-footer .linkedin i{
+footer .linkedin i {
+
     padding: 8px 16px 8px 0px;
 }
 
 /* Classes for Javascript use */
-.black{
+.black {
+
     color: #000;
 }
 
-#language-separator.black-border{
+#language-separator.black-border { 
+
     border-color: #000;
 }
 
-.white-background{
+.white-background {
+
     background-color: #f3f3f3;
 }
 
 .github i.black {
+
     color: #000;
 }
 
 .site-title h2.blue{
+
     color: #0077B5;
 }
 
-#about .blue-background{
+#about .blue-background {
+
     background-color: #0077B5;
 }
 
-.deactive{
+.deactive {
+
     display: none;
 }
 
-header nav ul li a.spy::after{
+header nav ul li a.spy::after {
+
     border-color: #013755;
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    
+    #about .buttons button {
+    height: 45px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    #projects .content ul {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    nav ul {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header .content {
+        width: 95%;
+    }
+    
+    nav {
+        margin-right: 3px;
+    }
+
+    nav ul {
+        width: 80%;
+    }
+
+    nav a {
+        padding: 0 6px;
+        font-size: 16px;
+    }
+
+    nav a::after {
+        bottom: -18px;
+        width: 90%;
+        left: 1px;
+    }
+    
+    #language-separator {
+        margin-left: 4px;
+    }
+    
+    .language-selector .language {
+        width: 30px;
+        height: 24px;
+    }   
+    
+    .language-selector img {
+        width: 34px;
+    }
+
+    header .site-title h2 {
+        font-size: 22px;
+    }
+    
+    .header-right {
+        max-width: 140px;
+    }
+    
+    .header-right a {
+        font-size: 20px;
+    }
+
+    header .content {
+        height: 45px;
+        padding: 0 10px 4px;
+    }
+
+    #hero h1 {
+        font-size: 60px;
+    }
+
+    #hero p {
+        padding-left: 77px;
+    }
+
+    #about button {
+        width: 140px;
+    }
+
+    #about button p {
+        font-size: 14px;
+    }
+
+    #about .folder p {
+        font-size: 20px;
+    }
+
+    #contact .content {
+        justify-content: space-between;
+        margin: 0 80px;
+    }
+
+    #contact .contacts {
+        max-width: 220px;
+        padding-top: 50px;
+        padding-right: 0;
+    }
+
+    footer a {
+        padding: 3px;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    
+    nav ul {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    
+    nav ul {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    header .content {
+        height: 40px;
+        padding: 0 5px 4px;
+        width: 98%;
+    }
+    
+    header .site-title {
+        max-width: 95px;
+    }
+    
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        width: 92%;
+    }
+
+    nav a::after {
+        bottom: -16px;
+        width: 85%;
+        left: 4px;
+    }
+
+    #about .content {
+        padding: 0px 5px;
+    }
+    
+    #about .text {
+        min-width: 0;
+        padding: 5px;
+    }
+
+    #about .buttons {
+        padding-right: 30px;
+        margin: 0;
+    }
+
+    #about .buttons button {
+        height: 45px;
+        max-width: 150px;
+        min-width: 0;
+    }
+
+    #about .folder {
+        height: 280px;
+        border-radius: 0px 40px 10px 20px;
+    }
+
+    #about .folder p {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    #projects {
+        padding-bottom: 150px;
+    }
+
+    footer .icons a {
+        font-size: 24px;
+    }
+
+    footer .linkedin i {
+        padding: 10px 18px 12px 2px;
+    }
+
+    footer .linkedin i::before {
+        right: 5px;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    
+    header .content {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    header button {
+        display: flex;
+    }
+
+    header .content {
+        background-color: inherit;
+    }
+
+    nav {
+        position: absolute;
+        display: none;
+        top: 44px;
+        left: -1px  ;
+        background-color: inherit;
+    }
+
+    nav.revealed {
+        display: flex;
+    }
+
+    nav ul {
+        width: 160px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: start;
+        padding: 5px 0px 10px 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+        font-weight: 300;
+        padding: 5px;
+    }
+
+    nav a::after {
+        width: 0px;
+        height: 20px;
+        bottom: 3px;
+        left: -8px;;
+    }
+
+    #hero h1 {
+        font-size: 45px;
+    }
+
+    #hero p {
+        font-size: 18px;
+        padding-left: 59px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    #about {
+        padding-top: 190px;
+        padding-bottom: 130px;
+    }
+
+    #about .title {
+        padding-bottom: 16px;
+    }
+
+    #technologies {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    #technologies .title {
+        padding-bottom: 40px;
+    }
+
+    #technologies .tech-list {
+        margin: 0 5px 70px;
+    }
+
+    #technologies .tech {
+        flex: 1 0 150px;
+        max-width: 160px;
+    }
+
+    #projects {
+        padding-top: 85px;
+        padding-bottom: 135px;
+    }
+
+    #projects .title {
+        padding-bottom: 75px;
+    }
+
+    #projects .content ul {
+        padding: 0 5px;
+    }
+
+    #contact .content {
+        margin: 0 40px;
+    }
+
+    #contact h2 {
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    footer .content {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    header button p {
+        margin-right: 30px;
+    }
+
+    #about .folder p {
+        font-size: 18px;
+    }
+
+    #technologies .tech {
+        flex: 1 0 125px;
+        max-width: 135px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        
+    header button p {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    header .site-title h2 {
+        font-size: 20px;
+    }
+
+    #hero h1 {
+        font-size: 35px;
+    }
+
+    #hero p {
+        font-size: 16px;
+        padding-left: 46px;
+    }
+
+    #about button p {
+        font-size: 12px;
+    }
+
+    #about .folder {
+        height: 240px;
+    }
+
+    #about .folder p {
+        font-size: 16px;
+    }
+
+    #contact .content {
+        margin: 0 10px 0px 20px; 
+    }
+
+    #contact h2 {
+        font-size: 20px;
+    }
+
+    #contact span {
+        font-size: 14px;
+    }
+
+    .cellphone {
+        width: 75px;
+    }
+
+    .cellphone-shadow {
+        width: 95px;
+    }
+
+    footer h2 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-height: 550px) {
+    
+    header .content {
+        height: 45px;
+        padding: 0 10px 4px;
+    }
+
+    #hero h1{
+        font-size: 60px;
+    }
+
+    #hero p {
+        padding-left: 77px;
+    }
+
+}
+
+@media only screen and (orientation: portrait) {
+
+    #about {
+        padding-top: 190px;
+    }
+
+    #technologies {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    #technologies .title {
+        padding-bottom: 40px;
+    }
+
+    #projects {
+        padding-top: 85px;
+        padding-bottom: 135px;
+    }
+
+    #projects .title {
+        padding-bottom: 75px;
+    }
 }

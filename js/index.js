@@ -3,6 +3,8 @@ const aOnNav = document.querySelectorAll("header nav a");
 const githubIconOnHeader = document.querySelector("header .github i");
 const h2OnHeader = document.querySelector(".site-title h2")
 const languageSeparator = document.querySelector("#language-separator")
+const nav = document.querySelector("nav")
+const navButton = document.querySelector("header button")
 
 const aboutButtons = document.querySelectorAll("#about .buttons button")
 const aboutTexts = document.querySelectorAll("#about .folder p")
@@ -20,6 +22,7 @@ header.addEventListener("mouseleave", () => {
     headerHovered = false;
 })
 
+// handle the header and elements color changing
 window.addEventListener("scroll", () => {
     if(!headerHovered){    
         if(window.scrollY > 10){
@@ -30,6 +33,7 @@ window.addEventListener("scroll", () => {
             aOnNav.forEach( a => {
                 a.classList.add("black");
             })
+            navButton.classList.add("black")
         }else{
             header.classList.remove("white-background");
             githubIconOnHeader.classList.remove("black");
@@ -38,11 +42,15 @@ window.addEventListener("scroll", () => {
             aOnNav.forEach( a => {
                 a.classList.remove("black");
             })
+            navButton.classList.remove("black")
         }
     }
 })
 
-function chanceActive(i){
+
+//  handle the about selector 
+
+function changeActive(i){
     aboutTexts.forEach(text => {
         text.classList.add("deactive");
     })
@@ -56,8 +64,10 @@ function chanceActive(i){
 // just a anonimous function would not work here!
 
 for(let i = 0; i < aboutButtons.length; i++){
-    aboutButtons[i].addEventListener("click", () => chanceActive(i));
+    aboutButtons[i].addEventListener("click", () => changeActive(i));
 }
+
+// handles the nav underlines that show where you are in the page
 
 const spyNavObserver = new IntersectionObserver(observedSections => {
     observedSections.forEach(section => {
@@ -72,7 +82,15 @@ const spyNavObserver = new IntersectionObserver(observedSections => {
     })
 },{
     root: null,
-    threshold: 0.6
+    threshold: 0.005,
+    rootMargin: '-50% -40% -40% -40% ',
 })
 
 spyedSections.forEach(section => spyNavObserver.observe(section))
+
+// handles the nav button functionality 
+navButton.addEventListener("click", () => {
+    if(nav.classList.contains("revealed")){
+        nav.classList.remove("revealed");
+    }else nav.classList.add("revealed")
+});
